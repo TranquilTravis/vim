@@ -1,0 +1,2 @@
+
+colorscheme Atelier_SeasideDark
