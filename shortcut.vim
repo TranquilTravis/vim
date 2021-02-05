@@ -37,7 +37,7 @@ noremap <silent><space>- :resize -3<cr>
 noremap <silent><space>, :vertical resize -3<cr>
 noremap <silent><space>. :vertical resize +3<cr>
 
-if g:sys_uname == 'darwin'
+if g:sys_uname == 'darwin' || g:sys_uname == 'linux'
 	execute "set <M-H>=\eH"
 	execute "set <M-J>=\eJ"
 	execute "set <M-K>=\eK"
