@@ -41,6 +41,7 @@ if index(g:bundle_set, 'basic') >= 0
 	Plug 'flazz/vim-colorschemes'
 	Plug 'mkitt/tabline.vim'
 	Plug 'JamshedVesuna/vim-markdown-preview' 
+	Plug 'dense-analysis/ale'
 
 	" All of your Plugins must be added before the following line
 endif

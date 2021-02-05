@@ -1,0 +1,24 @@
+set nocompatible  "Use VIM settings rather than Vi settings; this
+		  "must be first in .vimrc
+
+let s:home = fnamemodify(resolve(expand('<sfile>:p')), ':h')
+command! -nargs=1 VimSource exec 'so '. fnameescape(s:home."/.vim/vim/<args>")
+
+if !exists('g:bundle_set')
+	let g:bundle_set= []
+endif
+
+exec 'set rtp+='.s:home
+"exec 'set rtp+=~/.vim'
+"exec 'set rtp+=~/.vim/vim/autoload'
+
+VimSource init.vim
+
+" source file
+""exec 'so '.fnameescape(s:home).'/.vim/vim/bundle.vim'
+VimSource bundle.vim
+
+" setups"
+VimSource setup.vim
+VimSource shortcut.vim
+
