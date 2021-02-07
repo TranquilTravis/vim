@@ -1,5 +1,5 @@
 
-" map Tagbar to F8
+" map Tagbar to F4
 nmap <F4> :TagbarToggle<CR>
 
 " map Files command for FZF to ctrl+f
