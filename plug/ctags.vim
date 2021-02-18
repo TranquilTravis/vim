@@ -1,2 +1,2 @@
 " show all tags
-nnoremap <C-[> g<C-]>
+nnoremap <C-[> <C-w>g<C-]>

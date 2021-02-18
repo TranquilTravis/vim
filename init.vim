@@ -24,7 +24,7 @@ endif
 
 filetype on
 filetype plugin on
-filetype indent on
+filetype plugin indent on
 
 set relativenumber
 set number
@@ -36,3 +36,4 @@ syntax on
 " show full path of file name underneath
 set statusline+=%F
 set clipboard+=unnamed
+let g:go_disable_autoinstall = 0

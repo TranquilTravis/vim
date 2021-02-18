@@ -42,6 +42,7 @@ if index(g:bundle_set, 'basic') >= 0
 	Plug 'mkitt/tabline.vim'
 	Plug 'JamshedVesuna/vim-markdown-preview' 
 	Plug 'dense-analysis/ale'
+	Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 	" All of your Plugins must be added before the following line
 endif

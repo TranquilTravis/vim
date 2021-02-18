@@ -2,10 +2,6 @@
 " map Tagbar to F4
 nmap <F4> :TagbarToggle<CR>
 
-" map Files command for FZF to ctrl+f
-nnoremap <silent> <C-f> :Files<CR>
-nnoremap <silent> <Leader>f :Rg<CR>
-
 " rainbow setting
 " others
 " disable search highlights

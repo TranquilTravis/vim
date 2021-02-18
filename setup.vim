@@ -7,8 +7,6 @@ VimSource plug/markdown.vim
 VimSource plug/alelint.vim
 VimSource plug/ctags.vim
 VimSource plug/tagbar.vim
-
-
-
-
+VimSource plug/airline.vim
+VimSource plug/fzf.vim
 
