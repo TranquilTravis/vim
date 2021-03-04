@@ -36,6 +36,7 @@ if index(g:bundle_set, 'basic') >= 0
 	Plug 'ludovicchabant/vim-gutentags'
 	Plug 'ggreer/the_silver_searcher'
 	Plug 'jremmen/vim-ripgrep'
+	Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 	Plug 'junegunn/fzf.vim'
 	Plug 'frazrepo/vim-rainbow'

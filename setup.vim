@@ -9,4 +9,5 @@ VimSource plug/ctags.vim
 VimSource plug/tagbar.vim
 VimSource plug/airline.vim
 VimSource plug/fzf.vim
+VimSource plug/grep.vim
 
