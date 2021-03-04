@@ -3,7 +3,11 @@ command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, {'options': '--delimiter : 
 
 " map Files command for FZF to ctrl+f
 nnoremap <silent> <C-f> :Files<CR>
-nnoremap <silent> <Leader>f :Ag<CR>
+if g:sys_uname == 'linux'
+	nnoremap <silent> <Leader>f :Rg<CR>
+else
+	nnoremap <silent> <Leader>f :Ag<CR>
+endif
 
 let g:fzf_colors =
 	\ { 'fg':      ['fg', 'Normal'],
