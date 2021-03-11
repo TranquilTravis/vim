@@ -30,6 +30,7 @@ set relativenumber
 set number
 set hlsearch		" enable search highlights
 set incsearch 		" highlight incremental search
+set expandtab		" use space as default indent
 syntax on
 " set mapleader
 " let mapleader = ";"

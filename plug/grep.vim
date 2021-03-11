@@ -3,9 +3,9 @@
 
 " map Files command for FZF to ctrl+f
 "nnoremap <silent> <C-f> :Files<CR>
-"nnoremap <silent> <Leader>f :Ag<CR>
+nnoremap <silent> <Leader>f :Ag<CR>
 nnoremap <silent> <C-F> :Leaderf file<CR>
-nnoremap <silent> <Leader>f :Leaderf rg<CR>
+nnoremap <silent> <F1> :Leaderf! rg<Space>
 "历史打开过的文件
 nnoremap <silent> <Leader>m :Leaderf mru<CR>
 "Buffer
