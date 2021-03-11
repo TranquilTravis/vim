@@ -1,5 +1,3 @@
-" Ag不包含文件名内容
-"command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, {'options': '--delimiter : --nth 4..'}, <bang>0)
 
 " map Files command for FZF to ctrl+f
 "nnoremap <silent> <C-f> :Files<CR>
