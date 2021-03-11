@@ -1,3 +1,9 @@
+" Ag with preview window
+" fzf#vim#with_preview([options], [preview window], [toggle keys...])
+command! -bang -nargs=+ -complete=dir Rag call fzf#vim#ag_raw(<q-args>, fzf#vim#with_preview({'options': '--delimiter : --nth 4..'}), <bang>0)
+
+let $FZF_DEFAULT_OPTS = '--reverse --bind ctrl-n:page-down,ctrl-p:page-up'
+
 let g:fzf_colors =
 	\ { 'fg':      ['fg', 'Normal'],
 	\ 'bg':      ['bg', 'Normal'],
