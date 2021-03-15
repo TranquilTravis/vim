@@ -30,8 +30,9 @@ set relativenumber
 set number
 set hlsearch		" enable search highlights
 set incsearch 		" highlight incremental search
-set expandtab		" use space as default indent
+set autoindent          " auto indent
 syntax on
+
 " set mapleader
 " let mapleader = ";"
 " show full path of file name underneath
