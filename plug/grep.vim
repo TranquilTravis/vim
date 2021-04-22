@@ -1,8 +1,7 @@
 
 " map Files command for FZF to ctrl+f
-"nnoremap <silent> <C-f> :Files<CR>
-nnoremap <silent> <Leader>f :Ag<CR>
-nnoremap <silent> <C-F> :Leaderf file<CR>
+nnoremap <silent> <C-f> :Files<CR>
+"nnoremap <silent> <C-F> :Leaderf file<CR>
 nnoremap <silent> gf :Leaderf rg<CR>
 "历史打开过的文件
 nnoremap <silent> <Leader>m :Leaderf mru<CR>
