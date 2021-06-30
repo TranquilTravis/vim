@@ -43,7 +43,7 @@ set undofile
 set guifont=Menlo\ Regular:h15
 
 " jedi settings
-let g:python3_host_prog = system('which' ,'python3' . expand("%"))
+let g:python3_host_prog = substitute(system('which python3'), "\n", '', 'g')
 
 " plugin for different vim
 " https://github.com/junegunn/vim-plug#neovim
