@@ -1,7 +1,7 @@
 
 " map Tagbar to F4
 nmap <F4> :TagbarToggle<CR>
-
+imap jj <Esc>
 " rainbow setting
 " others
 " disable search highlights
@@ -24,6 +24,8 @@ inoremap <C-l> <C-w>l
 "inoremap <lt> <lt>><Esc>i
 " backspace delete
 nnoremap <C-x> i<BS><Esc>
+inoremap <c-c> <ESC>
+cnoremap <c-c> <ESC>
 "
 "----------------------------------------------------------------------
 " window control
@@ -33,17 +35,17 @@ noremap <silent><space>- :resize -3<cr>
 noremap <silent><space>, :vertical resize -3<cr>
 noremap <silent><space>. :vertical resize +3<cr>
 
-if g:sys_uname == 'darwin' || g:sys_uname == 'linux'
-	execute "set <M-H>=\eH"
-	execute "set <M-J>=\eJ"
-	execute "set <M-K>=\eK"
-	execute "set <M-L>=\eL"
-endif
+" if g:sys_uname == 'darwin' || g:sys_uname == 'linux'
+" 	execute "set <M-H>=\eH"
+" 	execute "set <M-J>=\eJ"
+" 	execute "set <M-K>=\eK"
+" 	execute "set <M-L>=\eL"
+" endif
 
-noremap <M-H> <C-w>h
-noremap <M-J> <C-w>j
-noremap <M-K> <C-w>k
-noremap <M-L> <C-w>l
+" noremap <M-H> <C-w>h
+" noremap <M-J> <C-w>j
+" noremap <M-K> <C-w>k
+" noremap <M-L> <C-w>l
 
 "----------------------------------------------------------------------
 " Go to tab by number
@@ -73,10 +75,11 @@ cnoremap <C-l> <Right>
 cnoremap <C-b> <left>
 cnoremap <C-f> <c-right>
 
-"----------------------------------------------------------------------
-" nerdtree file management
-"----------------------------------------------------------------------
-nnoremap <silent><F2> :NERDTreeFind<CR>
 
 " copy to clipboard in visual mode
 " markdown
+"
+"----------------------------------------------------------------------
+" Cheat Sheet
+"----------------------------------------------------------------------
+" Alt-p: enable or disable AutoPairs

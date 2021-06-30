@@ -27,15 +27,50 @@ filetype plugin on
 filetype plugin indent on
 
 set relativenumber
+set mouse=a  " change cursor per mode
 set number
 set hlsearch		" enable search highlights
 set incsearch 		" highlight incremental search
 set autoindent          " auto indent
+set nobackup
+set tabstop=4
+set shiftwidth=4
+set fillchars+=vert:\  " remove chars from seperators
+set softtabstop=4
+
+set undodir=$HOME/.vim/undodir
+set undofile
+set guifont=Menlo\ Regular:h15
+
+" jedi settings
+let g:python3_host_prog = '/Users/dongqi/python_env/euler/bin/python3'
+
+" plugin for different vim
+" https://github.com/junegunn/vim-plug#neovim
+let data_dir = has('nvim') ? stdpath('data') . '/site' : '~/.vim'
+if empty(glob(data_dir . '/autoload/plug.vim'))
+  silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+if has("gui_running")
+	set ruler
+	colorscheme macvim
+endif
+
+set fileencodings=ucs-bom,utf-8,gb18030,latin1  " vim encoding
 syntax on
+
+if !isdirectory(&undodir) 
+	call mkdir(&undodir, 'p', 0700)
+endif
 
 " set mapleader
 " let mapleader = ";"
 " show full path of file name underneath
 set statusline+=%F
-set clipboard+=unnamed
+set clipboard+=unnamedplus
 let g:go_disable_autoinstall = 0
+
+" easy breakpoint python
+au FileType python map <silent> <leader>j ofrom pdb import set_trace; set_trace()<esc>
