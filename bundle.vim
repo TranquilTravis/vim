@@ -35,6 +35,7 @@ if index(g:bundle_set, 'basic') >= 0
 	Plug 'jiangmiao/auto-pairs'
 	Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
+	Plug 'rust-lang/rust.vim'
     Plug 'roxma/nvim-yarp'
 	Plug 'ncm2/ncm2'
     Plug 'ncm2/ncm2-jedi'

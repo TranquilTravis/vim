@@ -24,8 +24,12 @@ inoremap <C-l> <C-w>l
 "inoremap <lt> <lt>><Esc>i
 " backspace delete
 nnoremap <C-x> i<BS><Esc>
-inoremap <c-c> <ESC>
-cnoremap <c-c> <ESC>
+inoremap <C-c> <ESC>
+cnoremap <C-c> <ESC>
+
+" map ctr-a to goto front in command mode
+cnoremap <C-A> <Home>
+" IMPORTANT: you can use q: to open the command-line window
 "
 "----------------------------------------------------------------------
 " window control

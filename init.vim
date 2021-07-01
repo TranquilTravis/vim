@@ -25,6 +25,7 @@ endif
 filetype on
 filetype plugin on
 filetype plugin indent on
+syntax on
 
 set relativenumber
 set mouse=a  " change cursor per mode
@@ -40,10 +41,11 @@ set softtabstop=4
 
 set undodir=$HOME/.vim/undodir
 set undofile
-set guifont=Menlo\ Regular:h15
+"set guifont=Menlo\ Regular:h15
 
 " jedi settings
 let g:python3_host_prog = substitute(system('which python3'), "\n", '', 'g')
+let g:ycm_server_python_interpreter=g:python3_host_prog
 
 " plugin for different vim
 " https://github.com/junegunn/vim-plug#neovim
@@ -52,14 +54,6 @@ if empty(glob(data_dir . '/autoload/plug.vim'))
   silent execute '!curl -fLo '.data_dir.'/autoload/plug.vim --create-dirs  https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
   autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
 endif
-
-if has("gui_running")
-	set ruler
-	colorscheme macvim
-endif
-
-set fileencodings=ucs-bom,utf-8,gb18030,latin1  " vim encoding
-syntax on
 
 if !isdirectory(&undodir) 
 	call mkdir(&undodir, 'p', 0700)
