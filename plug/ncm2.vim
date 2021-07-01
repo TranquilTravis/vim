@@ -33,6 +33,8 @@ autocmd BufEnter * call ncm2#enable_for_buffer()
 set completeopt=noinsert,menuone
 set shortmess+=c
 
+inoremap <c-y> <c-i>
+
 " make it FAST
 " let ncm2#popup_delay = 60
 " let ncm2#complete_length = [[1,1]]
