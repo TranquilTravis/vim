@@ -64,8 +64,8 @@ noremap <silent><tab>7 7gt
 noremap <silent><tab>8 8gt
 noremap <silent><tab>9 9gt
 noremap <silent><tab>0 :tablast<cr>
-noremap <silent><tab>h gT<cr>
-noremap <silent><tab>l gt<cr>
+noremap <silent><tab>h gT
+noremap <silent><tab>l gt
 
 "----------------------------------------------------------------------
 " Movement 
