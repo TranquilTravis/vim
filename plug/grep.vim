@@ -1,6 +1,6 @@
 
 " map Files command for FZF to ctrl+f
-nnoremap <silent> <C-f> :Files<CR>
+"nnoremap <silent> <C-f> :Files<CR>
 "nnoremap <silent> <C-F> :Leaderf file<CR>
 nnoremap <silent> gf :Leaderf rg<CR>
 "历史打开过的文件
@@ -10,6 +10,19 @@ nnoremap <silent> <Leader>b :Leaderf buffer<CR>
 "函数搜索（仅当前文件里）
 nnoremap <silent> <Leader>F :Leaderf function<CR>
 
+noremap <F4> :LeaderfFunction!<cr>
+let g:Lf_ShowRelativePath = 0
+let g:Lf_HideHelp = 1
+let g:Lf_PreviewResult = {'Function':0, 'Colorscheme':1}
+
+let g:Lf_NormalMap = {
+	\ "File":   [["<ESC>", ':exec g:Lf_py "fileExplManager.quit()"<CR>']],
+	\ "Buffer": [["<ESC>", ':exec g:Lf_py "bufExplManager.quit()"<CR>']],
+	\ "Mru":    [["<ESC>", ':exec g:Lf_py "mruExplManager.quit()"<CR>']],
+	\ "Tag":    [["<ESC>", ':exec g:Lf_py "tagExplManager.quit()"<CR>']],
+	\ "Function":    [["<ESC>", ':exec g:Lf_py "functionExplManager.quit()"<CR>']],
+	\ "Colorscheme":    [["<ESC>", ':exec g:Lf_py "colorschemeExplManager.quit()"<CR>']],
+	\ }
 " Show icons, icons are shown by default
 let g:Lf_ShowDevIcons = 1
 " don't show the help in normal mode

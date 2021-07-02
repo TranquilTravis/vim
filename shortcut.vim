@@ -1,6 +1,4 @@
 
-" map Tagbar to F4
-nmap <F4> :TagbarToggle<CR>
 imap jj <Esc>
 " rainbow setting
 " others

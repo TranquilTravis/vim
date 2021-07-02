@@ -15,16 +15,18 @@ if index(g:bundle_set, 'basic') >= 0
 	Plug 'junegunn/vim-easy-align', { 'on': 'NERDTreeToggle' }
 	Plug 'scrooloose/nerdtree'
 	Plug 'valloric/youcompleteme'
-	Plug 'majutsushi/tagbar'
+	Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary' }
+	Plug 'liuchengxu/vista.vim'
+	" Plug 'majutsushi/tagbar'
 	Plug 'vim-airline/vim-airline'  " make statusline awesome
 	Plug 'vim-airline/vim-airline-themes'  " themes for statusline
 	Plug 'universal-ctags/ctags'
 	Plug 'ludovicchabant/vim-gutentags'
-	Plug 'ggreer/the_silver_searcher'
-	Plug 'jremmen/vim-ripgrep'
-	Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
-	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-	Plug 'junegunn/fzf.vim'
+	" Plug 'ggreer/the_silver_searcher'
+	" Plug 'jremmen/vim-ripgrep'
+	" Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
+	" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+	" Plug 'junegunn/fzf.vim'
 	Plug 'frazrepo/vim-rainbow'
 	Plug 'flazz/vim-colorschemes'
 	Plug 'mkitt/tabline.vim'
