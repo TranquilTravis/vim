@@ -28,21 +28,8 @@ let g:gutentags_ctags_extra_args += ['--c++-kinds=+pxI']
 let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
 
 " show tag generation status
-function! s:get_gutentags_status(mods) abort
-    let l:msg = ''
-    if index(a:mods, 'ctags') >= 0
-       let l:msg .= '♨'
-     endif
-     if index(a:mods, 'cscope') >= 0
-       let l:msg .= '♺'
-     endif
-     return l:msg
-endfunction
 
-set statusline+=%{gutentags#statusline_cb(function('<SID>get_gutentags_status'))}
-
-" modules load with gutentags
-"let g:gutentags_modules = ['ctags', 'gtags_cscope']
+" set statusline+=%{gutentags#statusline_cb(function('<SID>get_gutentags_status'))}
 
 " exclude file types
 let g:gutentags_ctags_exclude = [

@@ -15,6 +15,7 @@ if index(g:bundle_set, 'basic') >= 0
 	Plug 'junegunn/vim-easy-align', { 'on': 'NERDTreeToggle' }
 	Plug 'scrooloose/nerdtree'
 	Plug 'valloric/youcompleteme'
+	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 	Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary' }
 	Plug 'liuchengxu/vista.vim'
 	" Plug 'majutsushi/tagbar'
@@ -25,7 +26,7 @@ if index(g:bundle_set, 'basic') >= 0
 	" Plug 'ggreer/the_silver_searcher'
 	" Plug 'jremmen/vim-ripgrep'
 	" Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
-	" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 	" Plug 'junegunn/fzf.vim'
 	Plug 'frazrepo/vim-rainbow'
 	Plug 'flazz/vim-colorschemes'
