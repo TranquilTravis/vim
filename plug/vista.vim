@@ -25,7 +25,12 @@ autocmd VimEnter * call vista#RunForNearestMethodOrFunction()
 " See all the avaliable executives via `:echo g:vista#executives`.
 let g:vista_default_executive = 'ctags'
 let g:vista#executive#ctags#support_json_format = 1
-let g:vista#render#ctags = 'default'
-let g:vista#renderer#ctags = 'default'
-let g:vista#renderer#default#vlnum_offset = 3
-let g:vista#renderer#enable_icon = 1
+
+" Set the executive for some filetypes explicitly. Use the explicit executive
+" instead of the default one for these filetypes when using `:Vista` without
+" specifying the executive.
+" there is a bug for cpp tag shown
+let g:vista_executive_for = {
+  \ 'cpp': 'vim_lsp',
+  \ 'php': 'vim_lsp',
+  \ }

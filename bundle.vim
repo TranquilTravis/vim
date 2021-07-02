@@ -18,7 +18,7 @@ if index(g:bundle_set, 'basic') >= 0
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 	Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary' }
 	Plug 'liuchengxu/vista.vim'
-	" Plug 'majutsushi/tagbar'
+	Plug 'majutsushi/tagbar'
 	Plug 'vim-airline/vim-airline'  " make statusline awesome
 	Plug 'vim-airline/vim-airline-themes'  " themes for statusline
 	Plug 'universal-ctags/ctags'

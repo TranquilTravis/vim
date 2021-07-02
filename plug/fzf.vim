@@ -1,13 +1,36 @@
 
-nnoremap <silent> <Leader>f :Ag<CR>
-" Ag不包含文件名内容
-command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, {'options': '--delimiter : --nth 4..'}, <bang>0)
+" let $FZF_DEFAULT_OPTS = '--reverse --bind ctrl-n:page-down,ctrl-p:page-up'
 
-" Ag with preview window
-" fzf#vim#with_preview([options], [preview window], [toggle keys...])
-command! -bang -nargs=+ -complete=dir Rag call fzf#vim#ag_raw(<q-args>, fzf#vim#with_preview({'options': '--delimiter : --nth 4..'}), <bang>0)
+let $FZF_DEFAULT_OPTS = '--layout=reverse'
 
-let $FZF_DEFAULT_OPTS = '--reverse --bind ctrl-n:page-down,ctrl-p:page-up'
+let g:fzf_layout = { 'window': 'call OpenFloatingWin()' }
+
+function! OpenFloatingWin()
+  let height = &lines - 3
+  let width = float2nr(&columns - (&columns * 2 / 10))
+  let col = float2nr((&columns - width) / 2)
+
+  let opts = {
+        \ 'relative': 'editor',
+        \ 'row': height * 0.3,
+        \ 'col': col + 30,
+        \ 'width': width * 2 / 3,
+        \ 'height': height / 2
+        \ }
+
+  let buf = nvim_create_buf(v:false, v:true)
+  let win = nvim_open_win(buf, v:true, opts)
+
+  call setwinvar(win, '&winhl', 'Normal:Pmenu')
+
+  setlocal
+        \ buftype=nofile
+        \ nobuflisted
+        \ bufhidden=hide
+        \ nonumber
+        \ norelativenumber
+        \ signcolumn=no
+endfunction
 
 let g:fzf_colors =
 	\ { 'fg':      ['fg', 'Normal'],
