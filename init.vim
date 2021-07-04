@@ -46,7 +46,6 @@ set undofile
 " jedi settings
 let g:python3_host_prog = substitute(system('which python3'), "\n", '', 'g')
 let g:ycm_server_python_interpreter=g:python3_host_prog
-let g:deoplete#enable_at_startup = 1
 
 " plugin for different vim
 " https://github.com/junegunn/vim-plug#neovim

@@ -13,6 +13,7 @@ if index(g:bundle_set, 'basic') >= 0
 	" Plug 'git://git.wincent.com/command-t.git'
 	" Plug 'rstacruz/sparkup', {'rtp': 'vim/'}	" help on http
 	Plug 'junegunn/vim-easy-align', { 'on': 'NERDTreeToggle' }
+	Plug 'lambdalisue/vim-manpager' " plugin to use Vim as a MANPAGER
 	Plug 'scrooloose/nerdtree'
 	Plug 'valloric/youcompleteme'
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -47,9 +48,6 @@ if index(g:bundle_set, 'basic') >= 0
 	" File path completion
 	Plug 'ncm2/ncm2-path'
     Plug 'ncm2/ncm2-match-highlight'
-	Plug 'Shougo/deoplete.nvim'
-	Plug 'roxma/nvim-yarp'
-	Plug 'roxma/vim-hug-neovim-rpc'
 	
 	" All of your Plugins must be added before the following line
 endif
