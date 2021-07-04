@@ -47,6 +47,9 @@ if index(g:bundle_set, 'basic') >= 0
 	" File path completion
 	Plug 'ncm2/ncm2-path'
     Plug 'ncm2/ncm2-match-highlight'
+	Plug 'Shougo/deoplete.nvim'
+	Plug 'roxma/nvim-yarp'
+	Plug 'roxma/vim-hug-neovim-rpc'
 	
 	" All of your Plugins must be added before the following line
 endif
