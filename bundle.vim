@@ -16,7 +16,7 @@ if index(g:bundle_set, 'basic') >= 0
 	Plug 'lambdalisue/vim-manpager' " plugin to use Vim as a MANPAGER
 	Plug 'scrooloose/nerdtree'
 	Plug 'valloric/youcompleteme'
-	Plug 'neoclide/coc.nvim', {'branch': 'release'}
+	" Plug 'neoclide/coc.nvim', {'branch': 'release'}
 	Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary' }
 	Plug 'liuchengxu/vista.vim'
 	Plug 'majutsushi/tagbar'
