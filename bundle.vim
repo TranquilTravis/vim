@@ -35,14 +35,14 @@ if index(g:bundle_set, 'basic') >= 0
 	Plug 'JamshedVesuna/vim-markdown-preview' 
 	Plug 'dense-analysis/ale'
 	Plug 'tpope/vim-commentary'  "comment-out by gc
-	Plug 'davidhalter/jedi-vim'
+	" Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 	Plug 'jiangmiao/auto-pairs'
 	Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 	Plug 'rust-lang/rust.vim'
     Plug 'roxma/nvim-yarp'
 	Plug 'ncm2/ncm2'
-    Plug 'ncm2/ncm2-jedi'
+    " Plug 'ncm2/ncm2-jedi'
 	" Words in buffer completion
     Plug 'ncm2/ncm2-bufword'
 	" File path completion
