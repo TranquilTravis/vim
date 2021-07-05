@@ -6,13 +6,6 @@ imap jj <Esc>
 nnoremap <esc><esc> :noh<return><esc> 
 
 
-" ############# shortcut settings ####################
-" move in insert mode
-inoremap <C-h> <Esc>hi
-inoremap <C-j> <C-w>j
-inoremap <C-k> <C-w>k
-inoremap <C-l> <C-w>l
-
 " autocomplete
 "inoremap ( ()<Esc>i
 "inoremap [ []<Esc>i
@@ -68,14 +61,23 @@ noremap <silent><tab>l gt
 "----------------------------------------------------------------------
 " Movement 
 "----------------------------------------------------------------------
-inoremap <C-h> <Left>
-inoremap <C-l> <Right>
-inoremap <C-j> <Down>
-inoremap <C-k> <Up>
+" inoremap <C-h> <Left>
+" inoremap <C-l> <Right>
+" inoremap <C-j> <Down>
+" inoremap <C-k> <Up>
+" ############# shortcut settings ####################
+" move in insert mode
+inoremap <silent><M-h> <Left>
+inoremap <silent><M-j> <C-o>gj
+inoremap <silent><M-k> <C-o>gk
+inoremap <silent><M-l> <Right>
+
 cnoremap <C-h> <Left>
 cnoremap <C-l> <Right>
 cnoremap <C-b> <left>
-cnoremap <C-f> <c-right>
+cnoremap <C-f> <right>
+cnoremap <C-p> <Up>
+cnoremap <C-n> <Down>
 
 
 " copy to clipboard in visual mode

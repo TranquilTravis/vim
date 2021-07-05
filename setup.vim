@@ -1,4 +1,5 @@
 
+VimSource plug/autopair.vim
 VimSource plug/nerdtree.vim
 VimSource plug/gutentags.vim
 VimSource plug/colors.vim
