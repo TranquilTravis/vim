@@ -3,7 +3,7 @@ imap jj <Esc>
 " rainbow setting
 " others
 " disable search highlights
-nnoremap <esc><esc> :noh<return><esc> 
+nnoremap <C-c><C-c> :noh<return><esc> 
 
 
 " autocomplete
@@ -29,6 +29,11 @@ noremap <silent><space>= :resize +3<cr>
 noremap <silent><space>- :resize -3<cr>
 noremap <silent><space>, :vertical resize -3<cr>
 noremap <silent><space>. :vertical resize +3<cr>
+
+nnoremap <M-Tab>   <C-W>w
+inoremap <M-Tab>   <C-O><C-W>w
+nnoremap <M-S-Tab> <C-W>W
+inoremap <M-S-Tab> <C-O><C-W>W
 
 " if g:sys_uname == 'darwin' || g:sys_uname == 'linux'
 " 	execute "set <M-H>=\eH"

@@ -9,3 +9,8 @@ nnoremap <silent> gf :Clap grep2<CR>
 nnoremap <C-b> :Clap grep ++query=<cword><CR>
 xnoremap <C-b> :Clap grep ++query=@visual<CR>
 
+" you should install:
+" 
+" curl https://sh.rustup.rs -sSf | sh
+" :call clap#installer#download_binary()
+"
