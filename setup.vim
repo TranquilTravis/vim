@@ -15,4 +15,6 @@ VimSource plug/vista.vim
 VimSource plug/fzf.vim
 VimSource plug/ncm2.vim
 VimSource plug/jedi.vim
+VimSource plug/coc.vim
+VimSource plug/rust.vim
 

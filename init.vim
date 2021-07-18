@@ -60,11 +60,12 @@ if !isdirectory(&undodir)
 endif
 
 " set mapleader
-" let mapleader = ";"
+let mapleader = ";"
 " show full path of file name underneath
 set statusline+=%F
 set clipboard+=unnamedplus
 let g:go_disable_autoinstall = 0
+let g:loaded_youcompleteme = 1 " disable ycm as start up due to conflict with coc
 
 " easy breakpoint python
 au FileType python map <silent> <leader>j ofrom pdb import set_trace; set_trace()<esc>

@@ -16,7 +16,7 @@ if index(g:bundle_set, 'basic') >= 0
 	Plug 'lambdalisue/vim-manpager' " plugin to use Vim as a MANPAGER
 	Plug 'scrooloose/nerdtree'
 	Plug 'valloric/youcompleteme'
-	" Plug 'neoclide/coc.nvim', {'branch': 'release'}
+	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 	Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary' }
 	Plug 'liuchengxu/vista.vim'
 	Plug 'majutsushi/tagbar'
@@ -28,7 +28,8 @@ if index(g:bundle_set, 'basic') >= 0
 	" Plug 'jremmen/vim-ripgrep'
 	" Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
 	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-	" Plug 'junegunn/fzf.vim'
+	Plug 'junegunn/fzf.vim'
+	Plug 'antoinemadec/coc-fzf'
 	Plug 'frazrepo/vim-rainbow'
 	Plug 'flazz/vim-colorschemes'
 	Plug 'mkitt/tabline.vim'
