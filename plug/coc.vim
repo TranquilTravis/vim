@@ -15,6 +15,7 @@ function! s:check_back_space() abort
 endfunction
 
 let g:coc_snippet_next = '<tab>'
-nnoremap <silent><leader>fc :CocFzfList<cr> 
+nnoremap <silent><leader>c :CocFzfList<cr> 
 nnoremap <silent><leader>ff :call CocActionAsync('jumpDefinition')<cr> 
+nnoremap <silent> <leader>h :call CocActionAsync('doHover')<cr>
 
