@@ -12,7 +12,7 @@ if index(g:bundle_set, 'basic') >= 0
 	Plug 'tpope/vim-fugitive'	" plugin on GitHub repo
 	" Plug 'git://git.wincent.com/command-t.git'
 	" Plug 'rstacruz/sparkup', {'rtp': 'vim/'}	" help on http
-	Plug 'junegunn/vim-easy-align', { 'on': 'NERDTreeToggle' }
+	Plug 'junegunn/vim-easy-align',
 	Plug 'lambdalisue/vim-manpager' " plugin to use Vim as a MANPAGER
 	Plug 'scrooloose/nerdtree'
 	Plug 'valloric/youcompleteme'

@@ -2,6 +2,7 @@
 VimSource plug/autopair.vim
 VimSource plug/nerdtree.vim
 VimSource plug/gutentags.vim
+VimSource plug/align.vim
 VimSource plug/colors.vim
 VimSource plug/rainbow.vim
 VimSource plug/markdown.vim
