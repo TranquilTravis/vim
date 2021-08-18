@@ -2,6 +2,7 @@
 " :CocInstall coc-rls  # https://github.com/neoclide/coc-rls
 " :CocInstall coc-rust-analyzer	# https://github.com/fannheyward/coc-rust-analyzer
 " :CocInstall coc-snippets
+" :CocInstall coc-jedi	# https://github.com/pappasam/coc-jedi
 
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? coc#_select_confirm() :
