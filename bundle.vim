@@ -17,6 +17,7 @@ if index(g:bundle_set, 'basic') >= 0
 	Plug 'scrooloose/nerdtree'
 	Plug 'valloric/youcompleteme'
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
+	Plug 'puremourning/vimspector'
 	Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary' }
 	Plug 'liuchengxu/vista.vim'
 	Plug 'majutsushi/tagbar'

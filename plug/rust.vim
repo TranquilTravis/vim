@@ -10,3 +10,9 @@ nnoremap <M-r> :RustRun<CR>
 " 使用 `:verbose nmap <M-t>` 检测 Alt-t是否被占用
 " 使用 `:verbose nmap` 则显示所有快捷键绑定信息
 nnoremap <M-t> :RustTest<CR>
+
+" cargo command
+nnoremap <leader>cb :Cbuild<CR>
+nnoremap <leader>cr :Crun<CR>
+nnoremap <leader>ct :Ctest<CR>
+nnoremap <leader>cu :Cupdate<CR>

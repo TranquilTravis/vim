@@ -20,3 +20,6 @@ nnoremap <silent><leader>c :CocFzfList<cr>
 nnoremap <silent><leader>ff :call CocActionAsync('jumpDefinition')<cr> 
 nnoremap <silent> <leader>h :call CocActionAsync('doHover')<cr>
 
+" nnoremap <silent><leader>ga <Plug>(coc-codeaction-cursor)
+" nnoremap <silent><leader>gg <Plug>(coc-codelens-action)
+
