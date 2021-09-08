@@ -10,6 +10,7 @@ if index(g:bundle_set, 'basic') >= 0
 	" let Vundle manage Vundle, required
 	Plug 'VundleVim/Vundle.vim'
 	Plug 'tpope/vim-fugitive'	" plugin on GitHub repo
+	Plug 'zivyangll/git-blame.vim'  " git blame information
 	" Plug 'git://git.wincent.com/command-t.git'
 	" Plug 'rstacruz/sparkup', {'rtp': 'vim/'}	" help on http
 	Plug 'junegunn/vim-easy-align',

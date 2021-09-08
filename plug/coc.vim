@@ -3,6 +3,7 @@
 " :CocInstall coc-rust-analyzer	# https://github.com/fannheyward/coc-rust-analyzer
 " :CocInstall coc-snippets
 " :CocInstall coc-jedi	# https://github.com/pappasam/coc-jedi
+" :CocInstall coc-tsserver for javascript
 
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? coc#_select_confirm() :

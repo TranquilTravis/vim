@@ -15,4 +15,5 @@ nnoremap <M-t> :RustTest<CR>
 nnoremap <leader>cb :Cbuild<CR>
 nnoremap <leader>cr :Crun<CR>
 nnoremap <leader>ct :Ctest<CR>
+nnoremap <leader>ctt :Ctest -- --nocapture<CR>
 nnoremap <leader>cu :Cupdate<CR>
