@@ -1,5 +1,5 @@
 " https://github.com/liuchengxu/vista.vim
-nmap <F4> :Vista!!<CR>
+nmap <F5> :Vista!!<CR>
 
 " show the nearest method/function in the statusline
 function! NearestMethodOrFunction() abort

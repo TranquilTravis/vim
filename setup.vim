@@ -19,5 +19,6 @@ VimSource plug/ncm2.vim
 "VimSource plug/jedi.vim
 VimSource plug/coc.vim
 VimSource plug/rust.vim
+VimSource plug/go.vim
 VimSource plug/spector.vim
 
