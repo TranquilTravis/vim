@@ -2,7 +2,7 @@
 " :CocInstall coc-rls  # https://github.com/neoclide/coc-rls
 " :CocInstall coc-rust-analyzer	# https://github.com/fannheyward/coc-rust-analyzer
 " :CocInstall coc-snippets
-" :CocInstall coc-jedi	# https://github.com/pappasam/coc-jedi
+" :CocInstall coc-pyright	# https://github.com/fannheyward/coc-pyright
 " :CocInstall coc-tsserver for javascript
 
 inoremap <silent><expr> <TAB>
