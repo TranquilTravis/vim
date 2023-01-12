@@ -11,19 +11,21 @@ if index(g:bundle_set, 'basic') >= 0
 	Plug 'VundleVim/Vundle.vim'
 	Plug 'tpope/vim-fugitive'	" plugin on GitHub repo
 	Plug 'zivyangll/git-blame.vim'  " git blame information
+
 	" Plug 'git://git.wincent.com/command-t.git'
 	" Plug 'rstacruz/sparkup', {'rtp': 'vim/'}	" help on http
 	Plug 'junegunn/vim-easy-align',
 	Plug 'lambdalisue/vim-manpager' " plugin to use Vim as a MANPAGER
 	Plug 'scrooloose/nerdtree'
-	Plug 'valloric/youcompleteme'
+	"Plug 'valloric/youcompleteme'
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 	Plug 'puremourning/vimspector'
 	Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary' }
 	Plug 'liuchengxu/vista.vim'
-	Plug 'majutsushi/tagbar'
+	"Plug 'majutsushi/tagbar'
 	Plug 'vim-airline/vim-airline'  " make statusline awesome
 	Plug 'vim-airline/vim-airline-themes'  " themes for statusline
+    " ctags used to generate tags for c++; u-ctags is the management tool for ctags
 	Plug 'universal-ctags/ctags'
 	Plug 'ludovicchabant/vim-gutentags'
 	" Plug 'ggreer/the_silver_searcher'
@@ -36,7 +38,7 @@ if index(g:bundle_set, 'basic') >= 0
 	Plug 'flazz/vim-colorschemes'
 	Plug 'mkitt/tabline.vim'
 	Plug 'JamshedVesuna/vim-markdown-preview' 
-	Plug 'dense-analysis/ale'
+	"Plug 'dense-analysis/ale'
 	Plug 'tpope/vim-commentary'  "comment-out by gc
 	" Plug 'davidhalter/jedi-vim', { 'for': 'python' }
 	Plug 'jiangmiao/auto-pairs'

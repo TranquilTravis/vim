@@ -7,12 +7,12 @@ nnoremap <C-c><C-c> :noh<return><esc>
 
 
 " autocomplete
-"inoremap ( ()<Esc>i
-"inoremap [ []<Esc>i
-"inoremap { {}<Esc>i
-"inoremap " ""<Esc>i
-"inoremap ' ''<Esc>i
-"inoremap <lt> <lt>><Esc>i
+inoremap ( ()<Esc>i
+inoremap [ []<Esc>i
+inoremap { {}<Esc>i
+inoremap " ""<Esc>i
+inoremap ' ''<Esc>i
+inoremap <lt> <lt>><Esc>i
 " backspace delete
 nnoremap <C-x> i<BS><Esc>
 inoremap <C-c> <ESC>

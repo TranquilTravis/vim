@@ -1,5 +1,5 @@
 " https://github.com/liuchengxu/vista.vim
-nmap <F5> :Vista!!<CR>
+nmap <F4> :Vista!!<CR>
 
 " show the nearest method/function in the statusline
 function! NearestMethodOrFunction() abort
@@ -31,6 +31,6 @@ let g:vista#executive#ctags#support_json_format = 1
 " specifying the executive.
 " there is a bug for cpp tag shown
 let g:vista_executive_for = {
-  \ 'cpp': 'vim_lsp',
-  \ 'php': 'vim_lsp',
+  \ 'cpp': 'coc',
+  \ 'php': 'coc',
   \ }

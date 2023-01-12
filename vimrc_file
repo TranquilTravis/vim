@@ -22,4 +22,3 @@ VimSource bundle.vim
 " setups"
 VimSource setup.vim
 VimSource shortcut.vim
-
