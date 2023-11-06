@@ -1,5 +1,4 @@
 
-imap jj <Esc>
 " rainbow setting
 " others
 " disable search highlights
@@ -15,6 +14,7 @@ inoremap ' ''<Esc>i
 inoremap <lt> <lt>><Esc>i
 " backspace delete
 nnoremap <C-x> i<BS><Esc>
+imap jj <Esc>
 inoremap <C-c> <ESC>
 cnoremap <C-c> <ESC>
 

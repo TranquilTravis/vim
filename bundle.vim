@@ -20,7 +20,9 @@ if index(g:bundle_set, 'basic') >= 0
 	"Plug 'valloric/youcompleteme'
 	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 	Plug 'puremourning/vimspector'
-	Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary' }
+	" Plug 'liuchengxu/vim-clap', { 'do': ':Clap install-binary' }
+    Plug 'nvim-lua/plenary.nvim'
+    Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.3' }
 	Plug 'liuchengxu/vista.vim'
 	"Plug 'majutsushi/tagbar'
 	Plug 'vim-airline/vim-airline'  " make statusline awesome

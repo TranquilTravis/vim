@@ -26,5 +26,11 @@ nnoremap <silent><leader>c :CocFzfList<cr>
 nnoremap <silent><leader>ff :call CocActionAsync('jumpDefinition')<cr> 
 nnoremap <silent> <leader>h :call CocActionAsync('doHover')<cr>
 
+" GoTo code navigation
+nmap <silent><leader>gd <Plug>(coc-definition)
+nmap <silent><leader>gy <Plug>(coc-type-definition)
+nmap <silent><leader>gi <Plug>(coc-implementation)
+nmap <silent><leader>gr <Plug>(coc-references)
+
 " nnoremap <silent><leader>ga <Plug>(coc-codeaction-cursor)
 " nnoremap <silent><leader>gg <Plug>(coc-codelens-action)
