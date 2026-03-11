@@ -25,18 +25,26 @@ if index(g:bundle_set, 'basic') >= 0
     Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.3' }
 	Plug 'liuchengxu/vista.vim'
 	"Plug 'majutsushi/tagbar'
-	Plug 'vim-airline/vim-airline'  " make statusline awesome
-	Plug 'vim-airline/vim-airline-themes'  " themes for statusline
+    " aerial.nvim (disabled - doesn't work with coc.nvim)
+    " Plug 'stevearc/aerial.nvim'
     " ctags used to generate tags for c++; u-ctags is the management tool for ctags
 	Plug 'universal-ctags/ctags'
 	Plug 'ludovicchabant/vim-gutentags'
 	" Plug 'ggreer/the_silver_searcher'
 	" Plug 'jremmen/vim-ripgrep'
 	" Plug 'Yggdroot/LeaderF', { 'do': ':LeaderfInstallCExtension' }
-	Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-	Plug 'junegunn/fzf.vim'
-	Plug 'antoinemadec/coc-fzf'
-	Plug 'frazrepo/vim-rainbow'
+	" Removed: fzf (using telescope instead)
+	" Removed: vim-rainbow (using treesitter instead)
+	Plug 'tpope/vim-surround'
+	Plug 'lewis6991/gitsigns.nvim'
+	Plug 'folke/which-key.nvim'
+	Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+    " Markdown plugins
+    Plug 'nvim-tree/nvim-web-devicons'  
+    Plug 'MeanderingProgrammer/render-markdown.nvim'
+
+    Plug 'sindrets/diffview.nvim'
+	Plug 'navarasu/onedark.nvim'
 	Plug 'flazz/vim-colorschemes'
 	Plug 'mkitt/tabline.vim'
 	Plug 'JamshedVesuna/vim-markdown-preview' 
@@ -47,15 +55,11 @@ if index(g:bundle_set, 'basic') >= 0
 	Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 
 	Plug 'rust-lang/rust.vim'
-    Plug 'roxma/nvim-yarp'
-	Plug 'ncm2/ncm2'
-    " Plug 'ncm2/ncm2-jedi'
-	" Words in buffer completion
-    Plug 'ncm2/ncm2-bufword'
-	" File path completion
-	Plug 'ncm2/ncm2-path'
-    Plug 'ncm2/ncm2-match-highlight'
+	" Removed: ncm2 (using coc.nvim for completion instead)
 	
+	" lualine.nvim (replaces vim-airline)
+	Plug 'nvim-lualine/lualine.nvim'
+
 	" All of your Plugins must be added before the following line
 endif
 call plug#end()

@@ -22,7 +22,7 @@ inoremap <silent><expr> <tab> coc#pum#visible() ? coc#pum#confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 let g:coc_snippet_next = '<tab>'
-nnoremap <silent><leader>c :CocFzfList<cr> 
+nnoremap <silent><leader>c :CocList<cr> 
 nnoremap <silent><leader>ff :call CocActionAsync('jumpDefinition')<cr> 
 nnoremap <silent> <leader>h :call CocActionAsync('doHover')<cr>
 
